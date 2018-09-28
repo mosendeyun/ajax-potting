@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="js/ajax.3.js"></script>
+    <script src="js/ajax.4.js"></script>
     <!-- <div>
         <span class="count">0</span>
         <button>开始计数</button>
@@ -20,13 +20,21 @@
     </div> -->
     <script>
 
+        // var params={
+        //     url:'ajax.php',
+        //     success:function(data){
+        //         console.log(data)
+        //     }
+        // }
+        // sendAjax(params)
         var params={
-            url:'ajax.php',
+            data:{'username':'xiaolan'},
             success:function(data){
                 console.log(data)
             }
         }
-        sendAjax(params)
+        sendAjax('ajax.php',params)
+
 //      var btn=document.getElementsByTagName('button')
 //      var $span=document.getElementsByClassName('count')
     
