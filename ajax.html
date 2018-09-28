@@ -7,9 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="js/ajax.2.js"></script>
+    <script src="js/ajax.3.js"></script>
+    <!-- <div>
+        <span class="count">0</span>
+        <button>开始计数</button>
+        <span class="count">0</span>
+        <button>开始计数</button>
+        <span class="count">0</span>
+        <button>开始计数</button>
+        <span class="count">0</span>
+        <button>开始计数</button>
+    </div> -->
     <script>
-        // sendAjax()
+
+        var params={
+            url:'ajax.php',
+            success:function(data){
+                console.log(data)
+            }
+        }
+        sendAjax(params)
+//      var btn=document.getElementsByTagName('button')
+//      var $span=document.getElementsByClassName('count')
+    
+//     //  console.log($count)
+//     for(var j=0;j<btn.length;j++){       
+//         btn[j].onclick=(function(j){
+//             var val=0;
+//             return function(){
+//                 val++;
+//                 $span[j].innerHTML=val;
+//             }
+//     }(j))
+   
+// }     
+     
+  
+    
     </script>
 </body>
 </html>
